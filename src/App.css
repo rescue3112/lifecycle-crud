@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.crud {
+  margin: 50px;
+}
+
+.crud h2 {
+  margin: 0;
+}
+
+.crud-header {
+  display: flex;
+}
+
+.crud-reload {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.crud-reload::after {
+  content: '\21BB';
+  font-size: 34px;
+  line-height: 26px;
+}
+
+.crud-notes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 800px;
+  margin: 30px 0px;
+  padding: 0;
+  list-style: none;
+}
+
+.crud-note {
+  position: relative;
+  width: 200px;
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.crud-delete {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.crud-delete::after {
+  content: '🞪';
+  font-size: 34px;
+  line-height: 26px;
+}
+
+.crud-form {
+  width: 350px;
+  position: relative;
+}
+
+.crud-form-textarea {
+  padding: 10px;
+  margin-right: 20px;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 100px;
+  max-height: 100px;
+  box-sizing: border-box;
+}
+
+.crud-form-button {
+  position: absolute;
+  bottom: 10px;
+  right: 60px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.crud-form-button::after {
+  content: '➤';
+  font-size: 30px;
+  line-height: 36px;
+}
